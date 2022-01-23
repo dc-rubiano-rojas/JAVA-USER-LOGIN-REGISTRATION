@@ -1,0 +1,23 @@
+# spring.datasource.url=jdbc:postgresql://localhost:5432/userregistration?allowPublicKeyRetrieval=true&useSSL=false
+# spring.datasource.username=postgres
+# spring.datasource.password=qWESZA123
+# spring.datasource.driver-class-name=com.postgresql.cj.jdbc.Driver
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password:
+    url: jdbc:postgresql://localhost:5432/userregistration
+    username:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:c
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
